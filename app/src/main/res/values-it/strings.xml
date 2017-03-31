@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Emergenza Medica</string>
+    <string name="TitleMain">Manovre Di Emergenza</string>
+    <string name="DescriptionMain">La perdita di coscienza si verifica quando un soggetto all\'improvviso non è in grado di rispondere agli stimoli e sembra dormire. Una persona può perdere coscienza per pochi secondi (come nel caso di uno svenimento) oppure per un periodo di tempo più lungo. \nLe persone che perdono coscienza non reagiscono a rumori forti o allo scuotimento, potendo perfino smettere di respirare o manifestare un affievolimento del polso. In questo caso richiedere immediatamente assistenza medica. Quanto prima la persona riceve il primo soccorso di emergenza, tanto migliore sarà la prognosi.</string>
+    <string name="GoMainButton">Vai al Quiz</string>
+
+    <string name="TitleQuiz">Medical Emergency Maneuvers</string>
+    <string name="ResultQuizButton">Vai Al Risultato</string>
+
+    <string name="Question1">domanda1</string>
+    <string name="Question2">domanda2</string>
+    <string name="Question3">domanda3</string>
+    <string name="Question4">domanda4</string>
+    <string name="Question5">domanda5</string>
+    <string name="Question6">domanda6</string>
+    <string name="Question7">domanda7</string>
+    <string name="Question8">domanda8</string>
+    <string name="Question9">domanda9</string>
+    <string name="Question10">domanda10</string>
+
+    <string name="Answer1">risposta1</string>
+    <string name="Answer2">risposta2</string>
+    <string name="Answer3">risposta3</string>
+    <string name="Answer4">risposta4</string>
+    <string name="Answer5">risposta5</string>
+    <string name="Answer6">risposta6</string>
+    <string name="Answer7">risposta7</string>
+    <string name="Answer8">rispost8</string>
+    <string name="Answer9">rispost9</string>
+    <string name="Answer10">risposta10</string>
+
+</resources>
