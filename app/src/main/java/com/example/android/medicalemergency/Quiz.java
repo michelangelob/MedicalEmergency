@@ -3,7 +3,8 @@ package com.example.android.medicalemergency;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import java.util.ArrayList;
 
@@ -15,80 +16,267 @@ import java.util.ArrayList;
 public class Quiz extends MainActivity{
 
 
+    ArrayList<Boolean> Answer = new ArrayList<>();
 
 
-    //String question1 ="Mantieni la calma mentre cerchi di aiutare qualcuno che sta svenendo. Se ti accorgi che una persona sta iniziando a manifestare segni di svenimento, afferrala e aiutala ad accasciarsi lentamente a terra.";
-    //String question2 ="Prova a toccarla o a scuoterla per vedere se riprende conoscenza. Nella maggior parte dei casi, le persone svenute riprendono coscienza rapidamente (di solito entro 20 secondi o 2 minuti).";
-    //String question3 ="Allentale eventuali abiti costrittivi (come una cravatta o un colletto stretto) per metterla nella condizione più confortevole possibile";
-    //String question4 ="Se non riprende conoscenza, controllale il polso. Chiama o chiedi a qualcun altro di chiamare un'ambulanza. Questa è anche l'occasione per chiedere a qualcuno di procurare un defibrillatore esterno automatico (AED).";
-    //String question5 ="Procedi alla rianimazione cardiopolmonare (RCP), se non riscontri alcun battito cardiaco. Se non hai familiarità con questa tecnica, cerca un medico o un professionista esperto nella RCP che possa eseguirla.";
-    //String question6 ="Mantieni la calma e rassicura la vittima. Mantenere un atteggiamento pacato e confortare la vittima, ti permette di gestire la situazione ed essere veramente di aiuto.";
-    //String question7 ="Impara a riconoscere i segni di un imminente svenimento. Una delle cose migliori che puoi fare, se hai la tendenza a svenire abbastanza spesso, è quella di imparare a riconoscerne i segnali. ";
-    //String question8 ="Trova un luogo dove sdraiarti, se ti senti sul punto di svenire. Solleva le gambe per favorire il flusso di sangue al cervello.";
-    //String question9 ="Respira profondamente. Inizia a fare dei respiri profondi inspirando attraverso il naso ed espirando attraverso la bocca. Questo, tra l'altro, ha anche un effetto calmante.";
-    //String question10 ="È una buona idea chiedere aiuto a chi ti sta vicino, in modo da avvertire le altre persone presenti della tua situazione. In questo modo un'altra persona può afferrarti nel caso stessi per cadere, metterti in una posizione sicura per evitarti lesioni e chiamare un medico, se necessario.";
-
+    ArrayList<String> AnswerDescription = new ArrayList<>();
+    public String result_message="";
+    public String ok="OTTIMO! ";
+    public String ko="RISPOSTA SBAGLIATA! ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
 
+        RadioGroup RadioButton0 = (RadioGroup)findViewById(R.id.radio_Question0);
+        RadioButton0.clearCheck();
+        RadioGroup RadioButton1 = (RadioGroup)findViewById(R.id.radio_Question1);
+        RadioButton1.clearCheck();
+        RadioGroup RadioButton2 = (RadioGroup)findViewById(R.id.radio_Question2);
+        RadioButton2.clearCheck();
+        RadioGroup RadioButton3 = (RadioGroup)findViewById(R.id.radio_Question3);
+        RadioButton3.clearCheck();
+        RadioGroup RadioButton4 = (RadioGroup)findViewById(R.id.radio_Question4);
+        RadioButton4.clearCheck();
+        RadioGroup RadioButton5 = (RadioGroup)findViewById(R.id.radio_Question5);
+        RadioButton5.clearCheck();
+
+        for (int i = 0; i < 6; i++){
+            Answer.add(i,false);
+            AnswerDescription.add(i,"");}
     }
 
 
+    public void onRadioQuestion0_Clicked(View view) {
+        // Is the button now checked?
 
+
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_Question0_1:
+                if (checked) {
+                    result_message = ok+getString(R.string.Answer0)+" ";
+                    result_message += getString(R.string.Answer0_1)+ "\n\n";
+                    AnswerDescription.add(0,result_message);
+                    Answer.add(0,true);
+                }
+                    break;
+            case R.id.radio_Question0_2:
+                if (checked){
+                    result_message = ko+getString(R.string.Answer0)+" ";
+                    result_message += getString(R.string.Answer0_1)+" ";
+                    result_message += getString(R.string.Answer0_2)  + "\n\n";
+                    AnswerDescription.add(0,result_message);
+                    Answer.add(0,false);
+                }
+                    break;
+            case R.id.radio_Question0_3:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer0)+" ";
+                    result_message += getString(R.string.Answer0_1)+" ";
+                    result_message += getString(R.string.Answer0_3)  + "\n\n";
+                    AnswerDescription.add(0,result_message);
+                    Answer.add(0,false);
+                }
+                    break;
+        }
+    }
+    public void onRadioQuestion1_Clicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+      switch(view.getId()) {
+        case R.id.radio_Question1_1:
+            if (checked) {
+                result_message = ok+getString(R.string.Answer1)+" ";
+                result_message += getString(R.string.Answer1_1)+ "\n\n";
+                AnswerDescription.add(1,result_message);
+                Answer.add(1,true);
+            }
+            break;
+        case R.id.radio_Question1_2:
+            if (checked){
+                result_message = ko+getString(R.string.Answer1)+" ";
+                result_message += getString(R.string.Answer1_1)+" ";
+                result_message += getString(R.string.Answer1_2)  + "\n\n";
+                AnswerDescription.add(1,result_message);
+                Answer.add(1,false);
+            }
+            break;
+        case R.id.radio_Question1_3:
+            if (checked) {
+                result_message = ko+getString(R.string.Answer1)+" ";
+                result_message += getString(R.string.Answer1_1)+" ";
+                result_message += getString(R.string.Answer1_3)  + "\n\n";
+                AnswerDescription.add(1,result_message);
+                Answer.add(1,false);
+            }
+            break;
+    }
+}
+
+    public void onRadioQuestion2_Clicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_Question2_1:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer2)+" ";
+                    result_message += getString(R.string.Answer2_3)+" ";
+                    result_message += getString(R.string.Answer2_1)  + "\n\n";
+                    Answer.add(2,false);
+                    AnswerDescription.add(2,result_message);
+                }
+                break;
+            case R.id.radio_Question2_2:
+                if (checked){
+                    result_message = ko+getString(R.string.Answer2)+" ";
+                    result_message += getString(R.string.Answer2_3)+" ";
+                    result_message += getString(R.string.Answer2_2)  + "\n\n";
+                    Answer.add(2,false);
+                    AnswerDescription.add(2,result_message);
+                }
+                break;
+            case R.id.radio_Question2_3:
+                if (checked) {
+                    result_message = ok+getString(R.string.Answer2)+" ";
+                    result_message += getString(R.string.Answer2_3) + "\n\n";
+                    Answer.add(2,true);
+                    AnswerDescription.add(2,result_message);
+                }
+                break;
+        }
+    }
+    public void onRadioQuestion3_Clicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_Question3_1:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer3)+" ";
+                    result_message += getString(R.string.Answer3_2)+" ";
+                    result_message += getString(R.string.Answer3_1)  + "\n\n";
+                    Answer.add(3,false);
+                    AnswerDescription.add(3,result_message);
+                }
+                break;
+            case R.id.radio_Question3_2:
+                if (checked){
+                    result_message = ok + getString(R.string.Answer3)+" ";
+                    result_message += getString(R.string.Answer3_2)+ "\n\n";
+                    Answer.add(3,true);
+                    AnswerDescription.add(3,result_message);
+                }
+                break;
+            case R.id.radio_Question3_3:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer3)+" ";
+                    result_message += getString(R.string.Answer3_2)+" ";
+                    result_message += getString(R.string.Answer3_3)  + "\n\n";
+                    Answer.add(3,false);
+                    AnswerDescription.add(3,result_message);
+                }
+                break;
+        }
+    }
+    public void onRadioQuestion4_Clicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_Question4_1:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer4)+" ";
+                    result_message += getString(R.string.Answer4_3)+" ";
+                    result_message += getString(R.string.Answer4_1)  + "\n\n";
+                    Answer.add(4,false);
+                    AnswerDescription.add(4,result_message);
+                }
+                break;
+            case R.id.radio_Question4_2:
+                if (checked){
+                    result_message = ko+getString(R.string.Answer4)+" ";
+                    result_message += getString(R.string.Answer4_3)+" ";
+                    result_message += getString(R.string.Answer4_2)  + "\n\n";
+                    Answer.add(4,false);
+                    AnswerDescription.add(4,result_message);
+                }
+                break;
+            case R.id.radio_Question4_3:
+                if (checked) {
+                    result_message = ok+getString(R.string.Answer4)+" ";
+                    result_message += getString(R.string.Answer4_3)+ "\n\n";
+                    Answer.add(4,true);
+                    AnswerDescription.add(4,result_message);
+                }
+                break;
+        }
+    }
+    public void onRadioQuestion5_Clicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_Question5_1:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer5)+" ";
+                    result_message += getString(R.string.Answer5_2)+" ";
+                    result_message += getString(R.string.Answer5_1)  + "\n\n";
+                    Answer.add(5,false);
+                    AnswerDescription.add(5,result_message);
+                }
+                break;
+            case R.id.radio_Question5_2:
+                if (checked){
+                    result_message = ok+getString(R.string.Answer5)+" ";
+                    result_message += getString(R.string.Answer5_2)+ "\n\n";
+                    Answer.add(5,true);
+                    AnswerDescription.add(5,result_message);
+                }
+                break;
+            case R.id.radio_Question5_3:
+                if (checked) {
+                    result_message = ko+getString(R.string.Answer5)+" ";
+                    result_message += getString(R.string.Answer5_2)+" ";
+                    result_message += getString(R.string.Answer5_3)  + "\n\n";
+                    Answer.add(5,false);
+                    AnswerDescription.add(5,result_message);
+                }
+                break;
+        }
+    }
     public void Result(View view) {
+
         int nro_wrong = 0;
-        String result_message="";
+        int nro_question = 0;
+        String result_send ="";
 
-        ArrayList<String> Answer = new ArrayList<>();
-
-        Answer.add(getString(R.string.Answer1));
-        Answer.add(getString(R.string.Answer2));
-        Answer.add(getString(R.string.Answer3));
-        Answer.add(getString(R.string.Answer4));
-        Answer.add(getString(R.string.Answer5));
-        Answer.add(getString(R.string.Answer6));
-        Answer.add(getString(R.string.Answer7));
-        Answer.add(getString(R.string.Answer8));
-        Answer.add(getString(R.string.Answer9));
-        Answer.add(getString(R.string.Answer10));
-
-        ArrayList<Boolean> Question = new ArrayList<>();
-
-        CheckBox Question1Checkbox = (CheckBox) findViewById(R.id.Question1Checkbox);
-        Question.add(Question1Checkbox.isChecked());
-        CheckBox Question2Checkbox = (CheckBox) findViewById(R.id.Question2Checkbox);
-        Question.add(Question2Checkbox.isChecked());
-        CheckBox Question3Checkbox = (CheckBox) findViewById(R.id.Question3Checkbox);
-        Question.add(Question3Checkbox.isChecked());
-        CheckBox Question4Checkbox = (CheckBox) findViewById(R.id.Question4Checkbox);
-        Question.add(Question4Checkbox.isChecked());
-        CheckBox Question5Checkbox = (CheckBox) findViewById(R.id.Question5Checkbox);
-        Question.add(Question5Checkbox.isChecked());
-        CheckBox Question6Checkbox = (CheckBox) findViewById(R.id.Question6Checkbox);
-        Question.add(Question6Checkbox.isChecked());
-        CheckBox Question7Checkbox = (CheckBox) findViewById(R.id.Question7Checkbox);
-        Question.add(Question7Checkbox.isChecked());
-        CheckBox Question8Checkbox = (CheckBox) findViewById(R.id.Question8Checkbox);
-        Question.add(Question8Checkbox.isChecked());
-        CheckBox Question9Checkbox = (CheckBox) findViewById(R.id.Question9Checkbox);
-        Question.add(Question9Checkbox.isChecked());
-        CheckBox Question10Checkbox = (CheckBox) findViewById(R.id.Question10Checkbox);
-        Question.add(Question10Checkbox.isChecked());
-
-        for (int i = 1; i < 10; i++) {
-            if(Question.get(i)) {
-                result_message += Answer.get(i) + "\n\n";
+        for (int i = 0; i < 6; i++) {
+            result_send += AnswerDescription.get(i);
+            if(Answer.get(i)) {
+                nro_question ++;
+            }
+            else{
+                nro_question ++;
                 nro_wrong ++;
             }
         }
-
         Intent intent = new Intent(this, Result.class);
 
-        intent.putExtra("result_message", result_message);
+        intent.putExtra("result_send", result_send);
         intent.putExtra("nro_wrong", nro_wrong);
+        intent.putExtra("nro_question", nro_question);
         startActivity(intent);
     }
 }
+

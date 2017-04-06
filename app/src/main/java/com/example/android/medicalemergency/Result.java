@@ -23,18 +23,26 @@ public class Result extends MainActivity {
 
         int nro_wrong=0;
         nro_wrong = i.getIntExtra("nro_wrong",nro_wrong);
+        int nro_question=0;
+        nro_question = i.getIntExtra("nro_question",nro_question);
+
+        TextView ResultMessage = (TextView) findViewById(R.id.ResultMessageTextView);
+
 
         switch (nro_wrong) {
             case 0:
-            case 1:
                 ImageView imageViewGreen = (ImageView) findViewById(R.id.Result_quiz_image_view);
                 imageViewGreen.setImageResource(R.drawable.green);
+                ResultMessage.setText(getString(R.string.greenMessage));
+
+                break;
+            case 1:
+                ImageView imageViewYellow = (ImageView) findViewById(R.id.Result_quiz_image_view);
+                imageViewYellow.setImageResource(R.drawable.yellow);
+                ResultMessage.setText(getString(R.string.yellowMessage) + " " +nro_question );
                 break;
             case 2:
             case 3:
-                ImageView imageViewYellow = (ImageView) findViewById(R.id.Result_quiz_image_view);
-                imageViewYellow.setImageResource(R.drawable.yellow);
-                break;
             case 4:
             case 5:
             case 6:
@@ -44,11 +52,12 @@ public class Result extends MainActivity {
             case 10:
                 ImageView imageViewRed = (ImageView) findViewById(R.id.Result_quiz_image_view);
                 imageViewRed.setImageResource(R.drawable.red);
+                ResultMessage.setText(getString(R.string.redMessage1) + " " + nro_wrong + " " + getString(R.string.redMessage2)  + " " + nro_question +  " " + getString(R.string.redMessage3) );
                 break;
         }
 
         TextView ResultTextView = (TextView) findViewById(R.id.ResultTextView);
-        ResultTextView.setText(i.getStringExtra("result_message"));
+        ResultTextView.setText(i.getStringExtra("result_send"));
 
     }
 

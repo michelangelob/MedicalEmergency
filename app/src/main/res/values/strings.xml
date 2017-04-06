@@ -1,33 +1,68 @@
 <resources>
+    <string name="app_name">Manovre di emergenza</string>
+    <string name="TitleMain">Sai cosa fare per aiutare una persona infortunata e/o vittima di un incidente?</string>
+    <string name="DescriptionMain">Sapere cosa fare in una emergenza è differente da pensare di poterla gestire realmente, in quanto la maggior parte delle persone potrebbe, in preda al panico, bloccarsi o rischiare di fare la cosa sbagliata. Questo quiz mira ovviamente a dare solo delle indicazioni generali sui comportamenti da tenere e non si vuole assolutamente sostituirsi ad un corso di "pronto soccorso". </string>
+    <string name="GoMainButton">Vai al Quiz</string>
 
-    <string name="app_name">Medical Emergency</string>
-    <string name="TitleMain">Medical Emergency Maneuvers</string>
-    <string name="DescriptionMain">La perdita di coscienza si verifica quando un soggetto all\'improvviso non è in grado di rispondere agli stimoli e sembra dormire. Una persona può perdere coscienza per pochi secondi (come nel caso di uno svenimento) oppure per un periodo di tempo più lungo. \nLe persone che perdono coscienza non reagiscono a rumori forti o allo scuotimento, potendo perfino smettere di respirare o manifestare un affievolimento del polso. In questo caso richiedere immediatamente assistenza medica. Quanto prima la persona riceve il primo soccorso di emergenza, tanto migliore sarà la prognosi.</string>
-    <string name="GoMainButton">Go To Quiz</string>
+    <string name="TitleQuiz">Manovre di emergenza</string>
+    <string name="ResultQuizButton">Vai Al Risultato</string>
 
-    <string name="TitleQuiz">Medical Emergency Maneuvers</string>
-    <string name="ResultQuizButton">Go To Result</string>
+    <string name="Question0">Nel caso in cui una persona presenti dolori al centro del torace e agli arti superiori cosa occorre fare?</string>
+    <string name="Question0_1">Metterla in posizione seduta con testa e spalle appoggiate e ginocchia piegate e chiamare immediatamente i soccorsi</string>
+    <string name="Question0_2">Stimolare il movimento della persona, verificando la postura</string>
+    <string name="Question0_3">Aiutarla a camminare verso il primo mezzo disponibile per portarla in ospedale</string>
+    <string name="Question1">Cosa fare se si trova una persona ferita, o si assiste ad un incidente in cui sono coinvolte delle persone?</string>
+    <string name="Question1_1">Si è obbligati a chiamare il 112/118 ed attendere l\'arrivo dei soccorsi. (art. 593 Codice Penale - Omissione di Soccorso)</string>
+    <string name="Question1_2">Si è obbligati a spostare la persona ferita e metterla al sicuro a qualunque costo per evitarle ulteriori danni</string>
+    <string name="Question1_3">Non c\'è nessun obbligo, si deve transitare velocemente per non creare traffico </string>
+    <string name="Question2">Cosa fare in presenza di un bambino che manifesta difficoltà respiratorie mentre sta mangiando?</string>
+    <string name="Question2_1">Prenderlo per i piedi e metterlo a testa in giù, scuotendolo </string>
+    <string name="Question2_2">Cercare in tutti i modi di togliere l\'ostruzione con le mani o con qualsiasi cosa a disposizione </string>
+    <string name="Question2_3">Incitarlo a tossire per espellere il corpo che ostruisce le vie aeree </string>
+    <string name="Question3">Cosa fare se si vede una persona cadere dall\'alto e rimanere incosciente?</string>
+    <string name="Question3_1">Scuoterla e metterla seduta per farla riprendere </string>
+    <string name="Question3_2">Non muoverla fino all\'arrivo dei soccorsi qualificati</string>
+    <string name="Question3_3">Portarla immediatamente al pronto soccorso </string>
+    <string name="Question4">Cosa fare in presenza di una ustione limitata?</string>
+    <string name="Question4_1">Applicare sulla zona interessata del ghiaccio per ridurre il bruciore </string>
+    <string name="Question4_2">Togliere eventuali vestiti attaccati alla pelle e usare un disinfettante </string>
+    <string name="Question4_3">Lavare a lungo con acqua corrente per ridurre la temperatura</string>
+    <string name="Question5">Cosa fare se si vede una persona "prendere la scossa"?</string>
+    <string name="Question5_1">Afferrarla con le mani e spostarla immediatamente dalla fonte di </string>
+    <string name="Question5_2">Interrompere l\'alimentazione elettrica a livello centrale (contatore)</string>
+    <string name="Question5_3">Usare qualcosa per spostarla </string>
 
-    <string name="Question1">question1</string>
-    <string name="Question2">question2</string>
-    <string name="Question3">question3</string>
-    <string name="Question4">question4</string>
-    <string name="Question5">question5</string>
-    <string name="Question6">question6</string>
-    <string name="Question7">question7</string>
-    <string name="Question8">question8</string>
-    <string name="Question9">question9</string>
-    <string name="Question10">question10</string>
 
-    <string name="Answer1">Answer1</string>
-    <string name="Answer2">Answer2</string>
-    <string name="Answer3">Answer3</string>
-    <string name="Answer4">Answer4</string>
-    <string name="Answer5">Answer5</string>
-    <string name="Answer6">Answer6</string>
-    <string name="Answer7">Answer7</string>
-    <string name="Answer8">Answer8</string>
-    <string name="Answer9">Answer9</string>
-    <string name="Answer10">Answer10</string>
+    <string name="Answer0">Nel caso in cui una persona presenti dolori al centro del torace e agli arti superiori</string>
+    <string name="Answer0_1">bisogna cercare di metterla in posizione seduta con testa e spalle appoggiate e ginocchia piegate e chiamare immediatamente i soccorsi</string>
+    <string name="Answer0_2"></string>
+    <string name="Answer0_3"></string>
+    <string name="Answer1">In caso di incidente in cui sono coinvolte delle persone </string>
+    <string name="Answer1_1">si è obbligati a chiamare il 112/118 ed attendere l\'arrivo dei soccorsi. </string>
+    <string name="Answer1_2">e se possibile non spostare la persona ferita perché potrebbe avere dei traumi o lesioni alla colonna </string>
+    <string name="Answer1_3">Non farlo costituisce reato(art. 593 Codice Penale - Omissione di Soccorso)</string>
+    <string name="Answer2">In presenza di un bambino che manifesta difficoltà respiratorie mentre sta mangiando </string>
+    <string name="Answer2_1">e non prenderlo per i piedi e metterlo a testa in giù. Il corpo estraneo potrebbe muoversi e provocare una occlusione totale delle vie aeree </string>
+    <string name="Answer2_2">e non cercare in tutti i modi di togliere l\'ostruzione. Il corpo estraneo potrebbe muoversi e andare più in profondità provocando una occlusione totale delle vie aeree </string>
+    <string name="Answer2_3"> bisogna incitarlo a tossire per espellere il corpo che ostruisce le vie aeree </string>
+    <string name="Answer3">Nel caso si veda una persona cadere dall\'alto e rimanere incosciente </string>
+    <string name="Answer3_1">perchè potrebbe aver riportato un trauma alla colonna vertebrale </string>
+    <string name="Answer3_2">bisogna non muoverla fino all\'arrivo dei soccorsi qualificati </string>
+    <string name="Answer3_3">perché potrebbe aver riportato un trauma alla colonna vertebrale </string>
+    <string name="Answer4">In caso di ustione limitata </string>
+    <string name="Answer4_1">e non usare il ghiaccio. Peggiora il danno</string>
+    <string name="Answer4_2">e non togliere i vestiti. Esporremmo la persona ad un alto rischio di infezioni</string>
+    <string name="Answer4_3">lavare a lungo con acqua corrente per ridurre la temperatura </string>
+    <string name="Answer5">Nel caso si veda una persona "prendere la scossa" </string>
+    <string name="Answer5_1">e non spostare immediatamente il soggetto in quanto il soccorritore può rimanere vittima egli stesso</string>
+    <string name="Answer5_2">cercare d\'interrompere l\'alimentazione elettrica a livello centrale (contatore) </string>
+    <string name="Answer5_3">e non spostare immediatamente il soggetto in quanto il soccorritore può rimanere vittima egli stesso</string>
+
+
+    <string name="greenMessage">Perfetto. Nessun errore!!!</string>
+    <string name="yellowMessage">Quasi perfetto, hai sbagliato 1 sola risposta su </string>
+    <string name="redMessage1">Non ci siamo, hai sbagliato </string>
+    <string name="redMessage2"> risposte su </string>
+    <string name="redMessage3">. Esamina i risultati di seguito</string>
 
 </resources>
