@@ -39,7 +39,7 @@ public class Result extends MainActivity {
             case 1:
                 ImageView imageViewYellow = (ImageView) findViewById(R.id.Result_quiz_image_view);
                 imageViewYellow.setImageResource(R.drawable.yellow);
-                ResultMessage.setText(getString(R.string.yellowMessage) + " " +nro_question );
+                ResultMessage.setText(getString(R.string.yellowMessage) + " " +nro_question +getString(R.string.yellowMessage1));
                 break;
             case 2:
             case 3:
@@ -52,7 +52,7 @@ public class Result extends MainActivity {
             case 10:
                 ImageView imageViewRed = (ImageView) findViewById(R.id.Result_quiz_image_view);
                 imageViewRed.setImageResource(R.drawable.red);
-                ResultMessage.setText(getString(R.string.redMessage1) + " " + nro_wrong + " " + getString(R.string.redMessage2)  + " " + nro_question +  " " + getString(R.string.redMessage3) );
+                ResultMessage.setText(getString(R.string.redMessage1) + " " + nro_wrong + " " + getString(R.string.redMessage2)  + " " + nro_question + getString(R.string.redMessage3) );
                 break;
         }
 

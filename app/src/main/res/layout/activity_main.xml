@@ -19,8 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_margin_bottom"
             android:textSize="@dimen/activity_large"
-            android:text="@string/TitleMain"
-            android:textAllCaps="true" />
+            android:text="@string/TitleMain" />
 
         <TextView
             android:id="@+id/DescriptionMainTextView"
