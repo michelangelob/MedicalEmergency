@@ -28,15 +28,16 @@ public class Quiz extends MainActivity{
 
     public void Result(View view) {
 
+        //initialize variable
         int not_selected=0;
         int nro_wrong = 0;
         int nro_question = 6;
         String ok = getString(R.string.ok) + " ";
         String ko = getString(R.string.ko) + " ";
-
         String result_message="";
         String result_send ="";
 
+        //They determine if there are unanswered questions, many mistakes and build the response string
         RadioGroup radioGroup0 = (RadioGroup)findViewById(R.id.radio_Question0);
         if (radioGroup0.getCheckedRadioButtonId() == -1)
             not_selected ++;
@@ -189,22 +190,21 @@ public class Quiz extends MainActivity{
             nro_wrong ++;
         }
 
-
+        //If all answers are given the pace of the response string the number of errors and the total number of questions
         if (not_selected==0)
         {
-            nro_wrong = nro_wrong-not_selected;
             Intent intent = new Intent(this, Result.class);
             intent.putExtra("result_message", result_message);
             intent.putExtra("nro_wrong", nro_wrong);
             intent.putExtra("nro_question", nro_question);
             startActivity(intent);
         }
+        //otherwise show a toast message where I indicate how many questions need to complete the quiz
         else
         {
             Context context = getApplicationContext();
             CharSequence text = getString(R.string.noRespose1)+" " + not_selected +" " + getString(R.string.noRespose2) ;
             int duration = Toast.LENGTH_SHORT;
-
             Toast toast = Toast.makeText(context, text, duration);
             toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
             toast.show();
