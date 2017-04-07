@@ -6,6 +6,7 @@
 
     <string name="TitleQuiz">Manovre di emergenza</string>
     <string name="ResultQuizButton">Vai Al Risultato</string>
+    <string name="RepeatQuizButton">Azzera</string>
 
     <string name="Question0">Nel caso in cui una persona presenti dolori al centro del torace e agli arti superiori cosa occorre fare?</string>
     <string name="Question0_1">Metterla in posizione seduta con testa e spalle appoggiate e ginocchia piegate e chiamare immediatamente i soccorsi</string>
@@ -65,5 +66,10 @@
     <string name="redMessage1">Non ci siamo, hai sbagliato </string>
     <string name="redMessage2"> risposte su </string>
     <string name="redMessage3">. Esamina i risultati di seguito</string>
+    <string name="noRespose1">Non hai risposto a </string>
+    <string name="noRespose2">domande. Completa il quiz per proseguire </string>
+    <string name="ok">OTTIMO! </string>
+    <string name="ko">RISPOSTA SBAGLIATA!</string>
+
 
 </resources>

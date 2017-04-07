@@ -36,7 +36,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_margin_top"
             android:textSize="@dimen/activity_text_normal"
-            android:text="descrizione risultato" />
+            android:text="descrizione risultato"/>
+
+        <Button
+            android:id="@+id/RepeatQuizButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:onClick="RepeatQuiz"
+            android:text="@string/RepeatQuizButton" />
 
     </LinearLayout>
 </ScrollView>

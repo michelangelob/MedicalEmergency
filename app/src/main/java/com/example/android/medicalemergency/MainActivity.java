@@ -14,6 +14,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
+    public void onBackPressed(){
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
+    }*/
+
     public void Go(View view) {
         Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);

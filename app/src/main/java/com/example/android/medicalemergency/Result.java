@@ -2,6 +2,7 @@ package com.example.android.medicalemergency;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +24,7 @@ public class Result extends MainActivity {
 
         int nro_wrong=0;
         nro_wrong = i.getIntExtra("nro_wrong",nro_wrong);
+
         int nro_question=0;
         nro_question = i.getIntExtra("nro_question",nro_question);
 
@@ -57,7 +59,12 @@ public class Result extends MainActivity {
         }
 
         TextView ResultTextView = (TextView) findViewById(R.id.ResultTextView);
-        ResultTextView.setText(i.getStringExtra("result_send"));
+        ResultTextView.setText(i.getStringExtra("result_message"));
+
+    }
+    public void RepeatQuiz(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
     }
 
