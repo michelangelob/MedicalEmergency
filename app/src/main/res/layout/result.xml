@@ -47,5 +47,6 @@
             android:onClick="RepeatQuiz"
             android:text="@string/RepeatQuizButton" />
 
+        
     </LinearLayout>
 </ScrollView>

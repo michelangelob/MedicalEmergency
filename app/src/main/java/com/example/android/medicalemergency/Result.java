@@ -18,7 +18,6 @@ public class Result extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result);
 
-        //initialize the variable
         Intent i=getIntent();
 
         int nro_wrong=0;
@@ -29,7 +28,7 @@ public class Result extends MainActivity {
 
         TextView ResultMessage = (TextView) findViewById(R.id.ResultMessageTextView);
 
-        //I determine based on the errors which image display and the response message
+
         switch (nro_wrong) {
             case 0:
                 ImageView imageViewGreen = (ImageView) findViewById(R.id.Result_quiz_image_view);
@@ -56,12 +55,11 @@ public class Result extends MainActivity {
                 ResultMessage.setText(getString(R.string.redMessage1) + " " + nro_wrong + " " + getString(R.string.redMessage2)  + " " + nro_question + getString(R.string.redMessage3) );
                 break;
         }
-        //I view a summary of the quiz, what are the correct questions and what the wrong and why
+
         TextView ResultTextView = (TextView) findViewById(R.id.ResultTextView);
         ResultTextView.setText(i.getStringExtra("result_message"));
-    }
 
-        //configure the button to reset
+    }
     public void RepeatQuiz(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

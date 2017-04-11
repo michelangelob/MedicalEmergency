@@ -1,9 +1,9 @@
 package com.example.android.medicalemergency;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -14,8 +14,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
+    /*
+    public void onBackPressed(){
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
+    }*/
+
     public void Go(View view) {
         Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);
+
     }
 }

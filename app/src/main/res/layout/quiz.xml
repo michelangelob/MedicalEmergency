@@ -17,6 +17,7 @@
             android:id="@+id/Question0TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_marginBottom="@dimen/activity_margin_bottom"
             android:layout_marginTop="@dimen/activity_margin_top"
             android:textSize="@dimen/activity_question"

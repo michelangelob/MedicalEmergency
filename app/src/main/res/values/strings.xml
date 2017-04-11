@@ -1,35 +1,35 @@
 <resources>
-    <string name="app_name">Emergency Maneuvers </string>
+    <string name="app_name">First Aid</string>
     <string name="TitleMain">Do you know what you should do in order to help an injured person or an accident victim?</string>
     <string name="DescriptionMain">knowing what to do in an Emergency situation is different from being able to manage it properly, since the majority of people could be panic striken and risk to do the wrong thing . This test aims only to provide the user with general warnings and  obviously is not a proper \"First Aid course\". </string>
     <string name="GoMainButton">GO to the Quiz</string>
 
-    <string name="TitleQuiz">Emergency Maneuvers</string>
+    <string name="TitleQuiz">First Aid</string>
     <string name="ResultQuizButton">Go to the result</string>
     <string name="RepeatQuizButton">Reset</string>
 
 
-    <string name="Question0">What should you do to help someone feeling chest and arm pains?</string>
+    <string name="Question0">1.What should you do to help someone feeling chest and arm pains?</string>
     <string name="Question0_1"> Help the person sit in a comfortable position with head and shoulders supported and knees bent and  call for help</string>
     <string name="Question0_2"> stimulate the person\'s movement, verifying the posture </string>
     <string name="Question0_3">Help the person to reach the hospital  </string>
-    <string name="Question1">What should you do with injured persons or incident’s victims ?</string>
+    <string name="Question1">2.What should you do with injured persons or incident’s victims ?</string>
     <string name="Question1_1">You should call  112/118 and wait for the first aid to arrive. </string>
     <string name="Question1_2">He was forced to move the injured person and placing her in safety at any cost to avoid further damage</string>
     <string name="Question1_3">There is no obligation, you must quickly pass not to create traffic </string>
-    <string name="Question2">What to do in the presence of a child who experiences difficulty breathing while you are eating?</string>
+    <string name="Question2">3.What to do in the presence of a child who experiences difficulty breathing while you are eating?</string>
     <string name="Question2_1">Take him by the feet and put it upside down, shaking it </string>
     <string name="Question2_2">Look at all the ways to remove the obstruction with your hands or with anything available</string>
     <string name="Question2_3">Cheering to cough to expel the body that clogs the airways</string>
-    <string name="Question3">What to do if you see a person falling from the top and stay unconscious?</string>
+    <string name="Question3">4.What to do if you see a person falling from the top and stay unconscious?</string>
     <string name="Question3_1">Shake it and put seat to restart playback </string>
     <string name="Question3_2">Do not move until the arrival of qualified relief</string>
     <string name="Question3_3">Take her to the hospital </string>
-    <string name="Question4">What to do in the presence of a limited burn?</string>
+    <string name="Question4">5.What to do in the presence of a limited burn?</string>
     <string name="Question4_1"> Apply to the affected area to reduce ice burning</string>
     <string name="Question4_2">Remove any clothing attached to the skin and use a disinfectant</string>
     <string name="Question4_3">Wash extensively with water to reduce the temperature</string>
-    <string name="Question5">What to do if you see a person \"electric shock\"?</string>
+    <string name="Question5">6.What to do if you see a person \"electric shock\"?</string>
     <string name="Question5_1">Hold it with both hands and move it immediately from source of danger</string>
     <string name="Question5_2">Discontinue at central level power supply (counter)</string>
     <string name="Question5_3">Use something to move it</string>
@@ -67,7 +67,7 @@
     <string name="redMessage3">. Examine the results below</string>
     <string name="noRespose1">You missed </string>
     <string name="noRespose2">questions. Complete the quiz to continue </string>
-    <string name="ok">GOOD! </string>
-    <string name="ko">WRONG ANSWER!</string>
+    <string name="ok">. GOOD: </string>
+    <string name="ko">. WRONG: </string>
 
 </resources>

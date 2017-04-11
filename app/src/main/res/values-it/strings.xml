@@ -1,34 +1,34 @@
 <resources>
-    <string name="app_name">Manovre di emergenza</string>
+    <string name="app_name">Primo Soccorso</string>
     <string name="TitleMain">Sai cosa fare per aiutare una persona infortunata e/o vittima di un incidente?</string>
-    <string name="DescriptionMain">Sapere cosa fare in una emergenza è differente da pensare di poterla gestire realmente, in quanto la maggior parte delle persone potrebbe, in preda al panico, bloccarsi o rischiare di fare la cosa sbagliata. Questo quiz mira ovviamente a dare solo delle indicazioni generali sui comportamenti da tenere e non si deve assolutamente considerare una alternativa ad un corso di "pronto soccorso". </string>
+    <string name="DescriptionMain">Sapere cosa fare in una emergenza è differente da pensare di poterla gestire realmente, in quanto la maggior parte delle persone potrebbe, in preda al panico, bloccarsi o rischiare di fare la cosa sbagliata. Questo quiz mira ovviamente a dare solo delle indicazioni generali sui comportamenti da tenere e non si deve assolutamente considerare una alternativa ad un corso di "primo soccorso". </string>
     <string name="GoMainButton">Vai al Quiz</string>
 
-    <string name="TitleQuiz">Manovre di emergenza</string>
+    <string name="TitleQuiz">Primo Soccorso</string>
     <string name="ResultQuizButton">Vai Al Risultato</string>
     <string name="RepeatQuizButton">Azzera</string>
 
-    <string name="Question0">Nel caso in cui una persona presenti dolori al centro del torace e agli arti superiori cosa occorre fare?</string>
+    <string name="Question0">1.Nel caso in cui una persona presenti dolori al centro del torace e agli arti superiori cosa occorre fare?</string>
     <string name="Question0_1">Metterla in posizione seduta con testa e spalle appoggiate e ginocchia piegate e chiamare immediatamente i soccorsi</string>
     <string name="Question0_2">Stimolare il movimento della persona, verificando la postura</string>
     <string name="Question0_3">Aiutarla a camminare verso il primo mezzo disponibile per portarla in ospedale</string>
-    <string name="Question1">Cosa fare se si trova una persona ferita, o si assiste ad un incidente in cui sono coinvolte delle persone?</string>
+    <string name="Question1">2.Cosa fare se si trova una persona ferita, o si assiste ad un incidente in cui sono coinvolte delle persone?</string>
     <string name="Question1_1">Si è obbligati a chiamare il 112/118 ed attendere l\'arrivo dei soccorsi. </string>
     <string name="Question1_2">Si è obbligati a spostare la persona ferita e metterla al sicuro a qualunque costo per evitarle ulteriori danni</string>
     <string name="Question1_3">Non c\'è nessun obbligo, si deve transitare velocemente per non creare traffico </string>
-    <string name="Question2">Cosa fare in presenza di un bambino che manifesta difficoltà respiratorie mentre sta mangiando?</string>
+    <string name="Question2">3.Cosa fare in presenza di un bambino che manifesta difficoltà respiratorie mentre sta mangiando?</string>
     <string name="Question2_1">Prenderlo per i piedi e metterlo a testa in giù, scuotendolo </string>
     <string name="Question2_2">Cercare in tutti i modi di togliere l\'ostruzione con le mani o con qualsiasi cosa a disposizione </string>
     <string name="Question2_3">Incitarlo a tossire per espellere il corpo che ostruisce le vie aeree </string>
-    <string name="Question3">Cosa fare se si vede una persona cadere dall\'alto e rimanere incosciente?</string>
+    <string name="Question3">4.Cosa fare se si vede una persona cadere dall\'alto e rimanere incosciente?</string>
     <string name="Question3_1">Scuoterla e metterla seduta per farla riprendere </string>
     <string name="Question3_2">Non muoverla fino all\'arrivo dei soccorsi qualificati</string>
     <string name="Question3_3">Portarla immediatamente al pronto soccorso </string>
-    <string name="Question4">Cosa fare in presenza di una ustione limitata?</string>
+    <string name="Question4">5.Cosa fare in presenza di una ustione limitata?</string>
     <string name="Question4_1">Applicare sulla zona interessata del ghiaccio per ridurre il bruciore </string>
     <string name="Question4_2">Togliere eventuali vestiti attaccati alla pelle e usare un disinfettante </string>
     <string name="Question4_3">Lavare a lungo con acqua corrente per ridurre la temperatura</string>
-    <string name="Question5">Cosa fare se si vede una persona \"prendere la scossa\"?</string>
+    <string name="Question5">6.Cosa fare se si vede una persona \"prendere la scossa\"?</string>
     <string name="Question5_1">Afferrarla con le mani e spostarla immediatamente dalla fonte di pericolo</string>
     <string name="Question5_2">Interrompere l\'alimentazione elettrica a livello centrale (contatore)</string>
     <string name="Question5_3">Usare qualcosa per spostarla </string>
@@ -68,8 +68,8 @@
     <string name="redMessage3">. Esamina i risultati di seguito</string>
     <string name="noRespose1">Non hai risposto a </string>
     <string name="noRespose2">domande. Completa il quiz per proseguire </string>
-    <string name="ok">OTTIMO! </string>
-    <string name="ko">RISPOSTA SBAGLIATA!</string>
+    <string name="ok">. ESATTO: </string>
+    <string name="ko">. SBAGLIATO: </string>
 
 
 </resources>
